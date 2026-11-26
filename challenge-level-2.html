@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tantangan HTML Level 2: Website Restoran / Kedai</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 780px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+            color: #222;
+            background-color: #f9fafb;
+        }
+
+        .card {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin-top: 0;
+            color: #b45309;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #fef3c7;
+            color: #92400e;
+            padding: 3px 10px;
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+        }
+
+        th,
+        td {
+            border: 1px solid #d1d5db;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #fffbeb;
+        }
+
+        code {
+            background: #f3f4f6;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: Consolas, monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <span class="badge">LEVEL 2 - NAIK TINGKAT!</span>
+        <h1>Tantangan HTML #2: Website Kedai / Restoran Impian</h1>
+        <p>
+            Selamat sudah melewati Level 1! Di Level 2 ini temanya bukan data diri lagi, melainkan membuat
+            <strong>Website Menu &amp; Profil Restoran / Kedai Makanan</strong> (boleh kedai ayam geprek, kedai bakso,
+            kafe minuman, atau restoran bebas buatanmu sendiri).
+            <br>
+            <strong>Aturan Utama:</strong> Tag HTML yang dipakai <strong>tetap sama seperti Level 1</strong>
+            (Heading, Paragraf, Gambar, Link, <code>&lt;br&gt;</code>, Tabel, dan List), tapi kali ini caranya
+            dibuat lebih menantang dengan menggabungkan tag di dalam tag!
+        </p>
+        <p>
+            Kerjakan di file <code>restoran-level-2.html</code>.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Syarat Wajib Level 2 (Lebih Susah!)</h2>
+        <p>Semua 7 elemen dari Level 1 wajib ada, tetapi harus memenuhi tantangan tambahan berikut:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Elemen</th>
+                    <th>Tantangan Level 2 (Yang Harus Dibuat)</th>
+                    <th>Petunjuk Teknik</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><strong>Heading Berjenjang</strong></td>
+                    <td>Harus punya minimal 3 tingkat heading yang rapi: nama restoran (<code>h1</code>), judul bagian utama (<code>h2</code>), dan sub-bagian seperti kategori menu atau cabang (<code>h3</code>).</td>
+                    <td><code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><strong>Link Navigasi &amp; Gambar Link</strong></td>
+                    <td>
+                        Buat <strong>3 jenis link</strong> berbeda:<br>
+                        1. Link menu di paling atas yang melompat ke bagian tertentu di halaman yang sama (misal: Daftar Menu, Jam Buka, Lokasi).<br>
+                        2. <strong>Gambar yang bisa diklik</strong> sebagai link ke halaman lain atau situs luar.<br>
+                        3. Link kembali ke halaman Level 1 (<code>data-diri.html</code> atau <code>index.html</code>) sebagai profil pemilik kedai!
+                    </td>
+                    <td><code>&lt;a href="#menu"&gt;</code> + atribut <code>id="menu"</code>, serta <code>&lt;a&gt;&lt;img&gt;&lt;/a&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><strong>List Bersarang (Nested List)</strong></td>
+                    <td>Buat <strong>list di dalam list</strong>! Misalnya daftar kategori menu (<code>&lt;ul&gt;</code>) yang di dalamnya ada daftar pilihan topping/level pedas (<code>&lt;ol&gt;</code> atau <code>&lt;ul&gt;</code> lagi).</td>
+                    <td><code>&lt;ul&gt;</code> / <code>&lt;ol&gt;</code> ditaruh di dalam <code>&lt;li&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><strong>Tabel Kompleks</strong></td>
+                    <td>
+                        Buat tabel Daftar Menu &amp; Harga yang memiliki:<br>
+                        - Minimal <strong>4 kolom</strong> (misal: Foto, Nama Menu, Deskripsi, Harga).<br>
+                        - Minimal <strong>1 foto kecil (<code>&lt;img&gt;</code>)</strong> dan <strong><code>&lt;br&gt;</code></strong> di dalam sel tabel (<code>&lt;td&gt;</code>).<br>
+                        - Minimal <strong>1 sel gabungan</strong> memakai atribut <code>colspan</code> atau <code>rowspan</code> (misalnya baris judul "Menu Spesial" atau catatan promo yang memanjang penuh).
+                    </td>
+                    <td><code>colspan="..."</code> / <code>rowspan="..."</code>, serta <code>&lt;img&gt;</code> &amp; <code>&lt;br&gt;</code> di dalam <code>&lt;td&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><strong>Paragraf &amp; &lt;br&gt; Terstruktur</strong></td>
+                    <td>Buat cerita sejarah singkat kedai dalam minimal 2 paragraf, plus bagian <strong>Daftar Cabang &amp; Jam Buka</strong> yang memakai <code>&lt;br&gt;</code> untuk memisahkan nama cabang, alamat, dan jam buka.</td>
+                    <td><code>&lt;p&gt;</code> dan <code>&lt;br&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><strong>Minimal 2 Gambar</strong></td>
+                    <td>Gunakan minimal 2 gambar dengan ukuran berbeda (misal: banner kedai besar di atas, dan foto menu ukuran kecil di dalam tabel).</td>
+                    <td><code>&lt;img src="..." width="..." height="..." alt="..."&gt;</code></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>Alur Halaman yang Disarankan</h2>
+        <ol>
+            <li><strong>Header &amp; Navigasi Cepat:</strong> Nama kedai (<code>&lt;h1&gt;</code>), slogan, dan baris link lompat ke bagian <em>Tentang Kami</em>, <em>Daftar Menu</em>, <em>Paket &amp; Cara Pesan</em>, serta <em>Lokasi</em>.</li>
+            <li><strong>Banner &amp; Cerita Kedai:</strong> Gambar utama kedai + 2 paragraf cerita kenapa kedai ini dibuat.</li>
+            <li><strong>Daftar Menu (Tabel Kompleks):</strong> Tabel berisi foto menu, nama + deskripsi pakai <code>&lt;br&gt;</code>, harga, dan 1 baris promo/kategori gabungan pakai <code>colspan</code>.</li>
+            <li><strong>Pilihan Topping &amp; Cara Pesan (Nested List):</strong> Daftar kategori dengan sub-daftar di dalamnya (misal: Level Pedas 1-3, Pilihan Minuman, atau Langkah Pemesanan).</li>
+            <li><strong>Lokasi, Jam Buka &amp; Pemilik:</strong> Alamat lengkap beberapa cabang memakai <code>&lt;br&gt;</code>, link profil pemilik ke file Level 1, dan link gambar menuju peta/situs luar.</li>
+        </ol>
+    </div>
+
+    <div class="card">
+        <h2>Aturan Main</h2>
+        <ul>
+            <li>Tidak perlu memakai CSS atau JavaScript dulu — fokus penuh pada kerapian struktur tag HTML!</li>
+            <li>Pastikan setiap tag pembuka punya tag penutup yang benar (terutama saat membuat list bersarang dan gambar di dalam link/tabel).</li>
+            <li>Jangan lupa pakai <code>border="1"</code> pada tag <code>&lt;table&gt;</code> supaya garis tabel dan efek <code>colspan</code>/<code>rowspan</code> terlihat jelas di browser.</li>
+        </ul>
+        <p><strong>Siap naik level?</strong> Buka file <code>restoran-level-2.html</code> untuk mulai mengerjakan!</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Hasil Level 2 - Kedai Ayam Nusantara</title>
+</head>
+
+<body>
+    <!-- 1. HEADER & NAVIGASI CEPAT (Link internal ke id bagian) -->
+    <h1>Kedai Ayam Nusantara</h1>
+    <p>
+        <em>Hangat, Renyah, dan Bikin Nagih Setiap Hari!</em>
+    </p>
+    <p>
+        <strong>Navigasi Cepat:</strong>
+        <a href="#tentang">Tentang Kami</a> |
+        <a href="#menu">Daftar Menu</a> |
+        <a href="#cara-pesan">Topping &amp; Cara Pesan</a> |
+        <a href="#lokasi">Lokasi &amp; Jam Buka</a>
+    </p>
+
+    <hr>
+
+    <!-- 2. TENTANG KAMI (Minimal 2 paragraf + gambar ukuran besar) -->
+    <h2 id="tentang">Tentang Kedai Kami</h2>
+    <img src="./ayam.jpg" alt="Banner Kedai Ayam Nusantara" width="400" height="240">
+
+    <p>
+        Kedai Ayam Nusantara berdiri sejak tahun 2024 dengan satu tujuan sederhana: menyajikan
+        hidangan ayam goreng dan ayam geprek rumahan dengan bumbu rempah pilihan yang segar
+        setiap hari. Semua bahan kami pilih langsung dari pasar lokal agar kualitas rasanya tetap terjaga.
+    </p>
+    <p>
+        Selain makan di tempat, kedai kami juga melayani pesanan antar untuk acara keluarga,
+        bekal sekolah, maupun kumpul bersama teman. Kepuasan pelanggan adalah prioritas utama kami.
+    </p>
+
+    <hr>
+
+    <!-- 3. DAFTAR MENU - TABEL KOMPLEKS (4 kolom, colspan, rowspan, <img> & <br> di dalam <td>) -->
+    <h2 id="menu">Daftar Menu &amp; Harga</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th>Kategori</th>
+            <th>Foto</th>
+            <th>Nama &amp; Keterangan Menu</th>
+            <th>Harga</th>
+        </tr>
+        <!-- Contoh sel gabungan ke samping (colspan) -->
+        <tr>
+            <th colspan="4">Promo Spesial Akhir Pekan - Gratis Es Teh untuk Pembelian Paket!</th>
+        </tr>
+        <!-- Contoh sel gabungan ke bawah (rowspan) + <img> dan <br> di dalam <td> -->
+        <tr>
+            <td rowspan="2"><strong>Menu Utama</strong></td>
+            <td>
+                <img src="./ayam.jpg" alt="Ayam Geprek Sambal Bawang" width="80" height="80">
+            </td>
+            <td>
+                <strong>Ayam Geprek Sambal Bawang</strong><br>
+                Nasi putih hangat + ayam krispi + sambal bawang ulek dadakan
+            </td>
+            <td>Rp 18.000</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="./ayam.jpg" alt="Ayam Bakar Madu" width="80" height="80">
+            </td>
+            <td>
+                <strong>Ayam Bakar Madu</strong><br>
+                Nasi putih + ayam bakar olesan madu + lalapan segar
+            </td>
+            <td>Rp 22.000</td>
+        </tr>
+        <tr>
+            <td><strong>Minuman</strong></td>
+            <td>
+                <img src="./ayam.jpg" alt="Es Jeruk Segar" width="60" height="60">
+            </td>
+            <td>
+                <strong>Es Teh / Es Jeruk Segar</strong><br>
+                Bisa pilih manis normal atau kurang gula
+            </td>
+            <td>Rp 5.000</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- 4. TOPPING & CARA PESAN - NESTED LIST (List di dalam List + heading h3) -->
+    <h2 id="cara-pesan">Pilihan Tambahan &amp; Cara Pesan</h2>
+
+    <h3>Kustomisasi Pesanan (Nested List)</h3>
+    <ul>
+        <li>
+            <strong>Pilihan Level Pedas:</strong>
+            <ol>
+                <li>Level 1 - Pedas Manis (cocok untuk pemula)</li>
+                <li>Level 2 - Pedas Sedang (5 cabai rawit)</li>
+                <li>Level 3 - Pedas Ekstra (10 cabai rawit)</li>
+            </ol>
+        </li>
+        <li>
+            <strong>Pilihan Topping Tambahan:</strong>
+            <ul>
+                <li>Keju Mozzarella Lumer (+Rp 5.000)</li>
+                <li>Telur Dadar Krispi (+Rp 4.000)</li>
+                <li>Tempe &amp; Tahu Goreng (+Rp 3.000)</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Langkah Pemesanan</h3>
+    <ol>
+        <li>Pilih menu utama dari tabel di atas.</li>
+        <li>Tentukan level pedas dan topping tambahan yang diinginkan.</li>
+        <li>
+            Konfirmasi pesanan ke kasir atau melalui tautan lokasi di bawah:
+            <ul>
+                <li>Makan di tempat (Dine-in)</li>
+                <li>Bungkus bawa pulang (Take-away)</li>
+            </ul>
+        </li>
+    </ol>
+
+    <hr>
+
+    <!-- 5. LOKASI, JAM BUKA & PROFIL PEMILIK (Pemakaian <br>, gambar sebagai link, link ke Level 1) -->
+    <h2 id="lokasi">Lokasi Cabang &amp; Jam Buka</h2>
+
+    <h3>Cabang Pusat Tangerang</h3>
+    <p>
+        Jl. Merdeka Raya No. 25<br>
+        Kecamatan Sukamaju, Kota Tangerang<br>
+        Buka Setiap Hari: 10.00 - 21.00 WIB
+    </p>
+
+    <h3>Cabang Stasiun</h3>
+    <p>
+        Jl. Melati Barat No. 8<br>
+        Dekat Stasiun Kota<br>
+        Senin - Sabtu: 09.00 - 20.00 WIB
+    </p>
+
+    <h3>Tautan &amp; Profil Pemilik</h3>
+    <p>Klik gambar di bawah ini untuk melihat referensi belajar HTML kami:</p>
+    <!-- Gambar yang bisa diklik sebagai Link -->
+    <a href="https://developer.mozilla.org/id/docs/Web/HTML" target="_blank">
+        <img src="./ayam.jpg" alt="Klik gambar untuk buka referensi HTML" width="120" height="120">
+    </a>
+
+    <p>
+        Ingin kenalan dengan pemilik kedai? Lihat halaman Level 1 di sini:<br>
+        <a href="./contoh-data-diri.html">Profil Pemilik Kedai (Halaman Data Diri)</a> |
+        <a href="./index.html">Kembali ke Index Utama</a>
+    </p>
+</body>
+
+</html>
