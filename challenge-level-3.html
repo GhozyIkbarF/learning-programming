@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tantangan HTML Level 3: Website Pendaftaran Event</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+            color: #222;
+            background-color: #f9fafb;
+        }
+
+        .card {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin-top: 0;
+            color: #047857;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #d1fae5;
+            color: #065f46;
+            padding: 3px 10px;
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+        }
+
+        th,
+        td {
+            border: 1px solid #d1d5db;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #ecfdf5;
+        }
+
+        code {
+            background: #f3f4f6;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: Consolas, monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <span class="badge">LEVEL 3 - INTERAKTIF DENGAN FORM!</span>
+        <h1>Tantangan HTML #3: Website Pendaftaran Event / Lomba</h1>
+        <p>
+            Mantap sudah sampai di Level 3! Kali ini kamu akan membuat
+            <strong>Website Informasi &amp; Formulir Pendaftaran Event</strong>
+            (misalnya lomba coding, turnamen game, acara sekolah, atau festival komunitas).
+            <br>
+            <strong>Aturan Utama:</strong> Semua tag dari Level 1 &amp; Level 2 tetap harus dipakai
+            (<code>h1-h3</code>, <code>p</code>, <code>img</code>, <code>a</code>, <code>&lt;br&gt;</code>,
+            <code>table</code> kompleks, dan nested list), <strong>ditambah elemen Formulir HTML baru</strong>:
+            <code>&lt;form&gt;</code>, <code>&lt;input&gt;</code> (biasa, radio, checklist/checkbox),
+            <code>&lt;textarea&gt;</code>, dan <code>&lt;button&gt;</code>!
+        </p>
+        <p>
+            Kerjakan di file <code>event-level-3.html</code>.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Syarat Wajib Tag Baru (Level 3)</h2>
+        <p>Di bagian formulir pendaftaran, wajib ada semua komponen berikut ini:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Komponen Form</th>
+                    <th>Contoh Penggunaan di Pendaftaran Event</th>
+                    <th>Tag &amp; Atribut Petunjuk</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><strong>Wadah Form</strong></td>
+                    <td>Membungkus seluruh input dan tombol pendaftaran</td>
+                    <td><code>&lt;form action="#" method="post"&gt;...&lt;/form&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><strong>Input Biasa</strong></td>
+                    <td>Kolom isi Nama Lengkap, Email, Umur / Nomor HP</td>
+                    <td><code>&lt;input type="text"&gt;</code>, <code>type="email"</code>, <code>type="number"</code> (pakai <code>placeholder="..."</code> &amp; <code>required</code>)</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><strong>Input Radio</strong></td>
+                    <td>Memilih <strong>1 pilihan saja</strong>, misalnya Kategori Peserta (SD / SMP / SMA) atau Jenis Lomba</td>
+                    <td><code>&lt;input type="radio" name="kategori" value="..."&gt;</code> (<code>name</code> harus sama!)</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><strong>Checklist (Checkbox)</strong></td>
+                    <td>Memilih <strong>lebih dari satu</strong>, misalnya Sesi Workshop yang diikuti / Perlengkapan yang dibawa, plus centang persetujuan aturan</td>
+                    <td><code>&lt;input type="checkbox" name="..." value="..."&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><strong>Textarea</strong></td>
+                    <td>Kolom isian panjang untuk Alamat Lengkap, Alasan Mengikuti Event, atau Catatan Khusus</td>
+                    <td><code>&lt;textarea rows="4" cols="40" placeholder="..."&gt;&lt;/textarea&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><strong>Button</strong></td>
+                    <td>Tombol untuk mengirim formulir ("Daftar Sekarang") dan tombol mengosongkan isi form ("Reset")</td>
+                    <td><code>&lt;button type="submit"&gt;</code> dan <code>&lt;button type="reset"&gt;</code></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>Syarat Tag Lama yang Tetap Harus Ada</h2>
+        <ul>
+            <li><strong>Heading bertingkat:</strong> <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, dan <code>&lt;h3&gt;</code>.</li>
+            <li><strong>Link navigasi internal:</strong> Menu di atas yang melompat ke <code>#info</code>, <code>#jadwal</code>, <code>#peraturan</code>, dan <code>#daftar</code>, plus link ke halaman Level 1 / Level 2 dan gambar yang bisa diklik.</li>
+            <li><strong>Paragraf &amp; <code>&lt;br&gt;</code>:</strong> Cerita/deskripsi event dan kontak panitia memakai <code>&lt;br&gt;</code>, serta <code>&lt;br&gt;</code> untuk merapikan baris di dalam formulir.</li>
+            <li><strong>Gambar (<code>&lt;img&gt;</code>):</strong> Minimal 2 gambar berbeda ukuran (banner event dan ikon/gambar di tabel atau link).</li>
+            <li><strong>Tabel Kompleks:</strong> Tabel Jadwal Acara &amp; Hadiah minimal 4 kolom, ada <code>colspan</code> / <code>rowspan</code>, dan ada <code>&lt;img&gt;</code> / <code>&lt;br&gt;</code> di dalam <code>&lt;td&gt;</code>.</li>
+            <li><strong>Nested List:</strong> Peraturan lomba dan daftar perlengkapan (list di dalam list).</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Tips Penting Saat Membuat Form</h2>
+        <ol>
+            <li>Untuk <strong>Input Radio</strong>, pastikan atribut <code>name="..."</code> sama di satu kelompok pilihan supaya user hanya bisa memilih satu opsi.</li>
+            <li>Gunakan <code>&lt;label&gt;</code> agar teks di sebelah radio atau checkbox bisa ikut diklik!</li>
+            <li>Tambahkan atribut <code>required</code> pada input wajib seperti Nama dan Email agar tidak bisa dikirim kalau masih kosong.</li>
+            <li>Tetap fokus pada <strong>HTML murni</strong> tanpa CSS/JavaScript dulu.</li>
+        </ol>
+        <p><strong>Ayo taklukkan Level 3!</strong> Buka file <code>event-level-3.html</code> untuk mulai mengerjakan.</p>
+    </div>
+</body>
+
+</html>
